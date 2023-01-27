@@ -99,11 +99,8 @@ test In-Search-Of-Lost-Time.txt arvore
 
 Para buscar uma palavra:
 
-"busca <palavra>"
-
-Exemplos:
-
-busca god
+#####Exemplos:
+#####busca god
 
 busca the
 
