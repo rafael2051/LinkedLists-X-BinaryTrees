@@ -1,0 +1,66 @@
+I'm a big believer in commenting code, to make it easier to understand and work on in the future. 
+After you have it looked at it in a while or if someone else is going to be reading your code. 
+The C sharp language provides a few different ways of commenting your code. 
+And we're going to take a moment in this example to see how they work. 
+So here in our folder, for the start in the comments folder, let's open up the program file.
+ So there's a few different ways you can comment your code. 
+Single line comments, are written with two forward slashes at the beginning of the line. 
+And I can write, for example, single line comments start with two slashes, and you can have as many of these as you want. 
+So single line comments are usually good for simple comments throughout a source file. 
+And usually you'll see one, to maybe three or four of these together. 
+If you find yourself writing comments that span more than a few lines, then you can opt to use multi line comments. 
+So multi line comments start with a forward slash and then an asterisk or a star character, and then continue over multiple lines until another asterisk and a slash. 
+So for example, multiple line comments start with a slash and a star, and can continue for several lines, until a closing star, and, oh oops, yeah okay. 
+And, slash are encountered. So we take another asterisk then a slash. And you can see that that closes off the comment. 
+And either one of these work well for writing comments throughout the source code. 
+So now there is one other comment type that I want to show, and it's a very useful one. 
+It's called the XML Documentation Comment. 
+So dotnet defines a way of creating comments with embedded XML content in them, that can be used to automatically generate documentation directly from your source code. 
+And these comments start with three forward slashes, and then have XML for the content. And you can see I've already started a few of these here. 
+So for example, I can summarize what this function does by writing three forward slashes, and then an XML tag named summary. 
+And then I can provide some texts, you know. 
+This is the main sample application function, and then three more slashes, and then I can close the XML tag. 
+I can also provide information about the functions parameters by using the param tag. 
+And then the name attribute I can set to the name of the parameter, which in this case has args. 
+And I can have more than one of these, depending on how many arguments I have. 
+So I can say that this is an, array of string arguments from the command line, and then close off that param tag. 
+And I can indicate, for example, what the return value of the function is. 
+In this case, there isn't one, but I can use the returns, tag to say, there's no return value. 
+And then close the returns tag. 
+So there's about 20 or so of these tags that you can use in these comments, and you can even make up your own. 
+So I'm not going to go through all of them. 
+You can learn more about the tags that are recommended for developers to use. 
+And let's go over to the browser for a moment. 
+So at this link, you can learn more about these tags and it also references some of the applications that can use these tags to generate documentation. 
+And you can see that if I scroll down on the side here, there's a whole bunch of tags that explain different parts of the XML docs that you can use. 
+So here's the returns tag that we used earlier. 
+Here's the param tag that we used. 
+So this is just to give you a sense of kinds of tags you might see in a file might look like. 
+Let's go ahead and use the build process to actually create the documentation that these tags will generate. 
+So back here in the code, there's a couple of ways to do this. 
+And there are dedicated tools that you can use that will process these comments. 
+But one of the easiest ways to do this is to just simply modify the CS project file, to indicate that you want the documentation to be created. 
+So let's go back to the folder and open up the comments that see as project file. 
+And what I'm going to do is add two lines of XML code to the project. 
+The first is the line that tells the C Sharp compiler to generate the documentation from the comments. 
+And that is called Generate Documentation File. 
+And that's going to be a value of true. 
+And then I can close that off. 
+And then the second line specifies the name of the output file to generate. 
+And you can specify where this goes in your project hierarchy and the folders and stuff. 
+Just to be simple I'm going to specify that as the Documentation File. 
+And that's going to be called, Comments.XNL. 
+So now I've modified the project file to indicate that we want the documentation and what the output documentation files should be. 
+So now I'll just go ahead and open up the terminal in the location of our project. 
+So I'll right, click here and open in integrated terminal. 
+And then I'll just simply call dotnet build. 
+And if I did that, and it run, the application would actually run, but I'm going to use the build process to build the finished executable, and as a side effect it will generate the documentation for me. 
+So when I type enter, the documentation, so first the build happens and then you can see that a new file here, comments .XML has appeared in my folder structure. 
+So let's go ahead and open that. 
+And you can see that the extracted comments from my source code, are now part of my Automatically Generated Documentation. 
+So here is the text that came before the tags. 
+Here's my summary tag, here's my parameter tag. 
+And then here's the returns tag. 
+Now you can use this to generate documentation for a very large project. 
+So as you're working in your code if you're writing these comments then when you're done and ready to generate the docs, it's just a simple command line operation, that you can do this. 
+So comments are a really great way to make your application easier, to understand as well as documents and C-sharp gives you several useful options that you should really take advantage of in your work.
