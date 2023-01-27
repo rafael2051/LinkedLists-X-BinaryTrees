@@ -46,26 +46,49 @@ o armazenamento e recuperação das linhas e palavras do arquivo de texto.
 Para compilar os códigos fontes deste projeto, abra o terminal do seu computador (seja o 
 sistema operacional windows, linux ou mac), vá até o diretório onde se encontram
 os arquivos fonte, e digite o seguinte comando:
-gcc main.c lista.c arvore_binaria.c -o test
+
+"gcc main.c lista.c arvore_binaria.c -o test"
+
 Este comando irá compilar os três arquivos fonte, incuindo os headers, e transformar
 o código em C em um arquivo objeto, que será usado para criar um executável, neste caso,
 chamado de "test". Você pode dar o nome que quiser ao executável, basta substituir
 test por qualquer outro nome.
 
-Para executar: depois de compilado, digite o seguinte comando: 
-teste <arquivo-texto.txt> lista
+Para executar: depois de compilado, digite o seguinte comando:
+
+"test <arquivo-texto.txt> lista"
+
 Esse comando deve ser usado para carregar o arquivo texto usando listas
 como estrutura de de armazenamento.
 Caso deseje utilizar a estrutura árvore binária de busca para carregar o arquivo
 e realizar as buscas, digite:
-test <arquivo-texto.txt> arvore.
+
+"test <arquivo-texto.txt> arvore"
+
 Exemplos:
-Para utilizar listas:			Para utilizar árvore binária de busca:
-ep texto.txt lista				ep texto.txt arvore
-ep sample.txt lista			ep sample.txt arvore
-ep 5000.txt lista				ep 5000.txt arvore
-ep bible.txt lista				ep bible.txt arvore
-ep In-Search-Of-Lost-Time.txt lista	ep In-Search-Of-Lost-Time.txt arvore
+Para utilizar listas:
+
+test texto.txt lista		
+
+test sample.txt lista			
+
+test 5000.txt lista		
+
+test bible.txt lista		
+
+test In-Search-Of-Lost-Time.txt lista	
+
+Para utilizar árvores: 
+
+test texto.txt arvore		
+
+test sample.txt arvore			
+
+test 5000.txt arvore
+
+test bible.txt arvore		
+
+test In-Search-Of-Lost-Time.txt arvore	
 
 Para buscar uma palavra:
 busca <palavra>
@@ -84,15 +107,23 @@ busca thou
 
 Parace encerrar o a execução do programa, basta digitar "fim" na linha de comando.
 
-Na pasta EP - AED1 foram incluídos 9 arquivos de texto para testar o programa e realizar  o armazenamento
+Na pasta sample foram incluídos 9 arquivos de texto para testar o programa e realizar  o armazenamento
 em memória de cada linha e cada palavra do arquivo txt na estrutura de dados selecionada pelo usuário:
 
 texto.txt (13 linhas)
+
 sample.txt (66 linhas)
+
 new.txt (440 linhas)
+
 2021.txt (2021 linhas)
+
 3000.txt (3000 linhas)
+
 5000.txt (5000 linhas)
+
 biblia-em-txt.txt (32369 linhas)
+
 bible.txt (100182 linhas)
+
 In-Search-Of-Lost-Time (109888 linhas)
