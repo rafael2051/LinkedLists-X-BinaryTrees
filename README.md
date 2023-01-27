@@ -66,6 +66,9 @@ e realizar as buscas, digite:
 "test <arquivo-texto.txt> arvore"
 
 Exemplos:
+
+/*****************************************************************************************************************************/
+
 Para utilizar listas:
 
 test texto.txt lista		
@@ -78,6 +81,8 @@ test bible.txt lista
 
 test In-Search-Of-Lost-Time.txt lista	
 
+/*****************************************************************************************************************************/
+
 Para utilizar árvores: 
 
 test texto.txt arvore		
@@ -88,12 +93,15 @@ test 5000.txt arvore
 
 test bible.txt arvore		
 
-test In-Search-Of-Lost-Time.txt arvore	
+test In-Search-Of-Lost-Time.txt arvore
+
+/*****************************************************************************************************************************/
 
 Para buscar uma palavra:
 busca <palavra>
 
 Exemplos:
+
 busca god
 busca the
 busca in
@@ -104,6 +112,8 @@ busca she
 busca him
 busca thy
 busca thou
+
+/*****************************************************************************************************************************/
 
 Parace encerrar o a execução do programa, basta digitar "fim" na linha de comando.
 
