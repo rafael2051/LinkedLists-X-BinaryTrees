@@ -103,14 +103,23 @@ busca <palavra>
 Exemplos:
 
 busca god
+
 busca the
+
 busca in
+
 busca are
+
 busca he
+
 busca is
+
 busca she
+
 busca him
+
 busca thy
+
 busca thou
 
 /*****************************************************************************************************************************/
