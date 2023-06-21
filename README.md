@@ -15,7 +15,7 @@ armazenar a informação, quanto para recuperar. Após o arquivo ser carregado, 
 de tempo para armazenar as linhas e palavras do texto na estrutura de dados selecionada. Neste projeto, há uma
 pasta chamada info que possui um relatório com experimentos realizados em que foram usados arquivos txt cada
 vez maiores para comparar as duas estruturas de dados. Neste relatório será possível observar como árvores binárias
-de busca são absurdamente mais eficiências que listas para armazenar e recuperar informação em larga escala.
+de busca são absurdamente mais eficientes que listas para armazenar e recuperar informação em larga escala.
 A seguir, existem mais informações sobre os códigos fontes, e instruções de como compilar e executar o programa
 no terminal, como carregar um arquivo de texto, e como realizar buscas por palavras específicas.
 
